@@ -301,6 +301,9 @@ u32 NandWrite(u32 SourceAddress, u32 DestinationAddress, u32 LengthBytes)
 			continue;
 		}
 
+		// Erase the block before write.
+		XNandPs_EraseBlock(NandInstPtr, Block);
+
 		/*
 		 * Check if we cross block boundary
 		 */

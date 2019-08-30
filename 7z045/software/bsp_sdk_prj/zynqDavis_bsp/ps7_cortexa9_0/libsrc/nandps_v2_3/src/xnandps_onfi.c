@@ -497,6 +497,9 @@ int Onfi_NandInit(XNandPs *InstancePtr)
 
 	Xil_AssertNonvoid(InstancePtr != NULL);
 
+	Onfi_CmdReadId(InstancePtr, 0x0);
+	Onfi_ReadData(InstancePtr, &JedecId[0], ONFI_ID_LEN);
+
 	for(Target=0; Target < XNANDPS_MAX_TARGETS; Target++) {
 		/*
 		 * Reset the target

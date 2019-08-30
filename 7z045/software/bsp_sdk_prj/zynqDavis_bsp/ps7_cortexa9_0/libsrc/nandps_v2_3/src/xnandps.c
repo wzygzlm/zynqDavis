@@ -249,9 +249,9 @@ int XNandPs_CfgInitialize(XNandPs *InstancePtr, XNandPs_Config *ConfigPtr,
 	 */
 	InstancePtr->IsReady = XIL_COMPONENT_IS_READY;
 
-	u8 *writeBootBinPtr = (u8 *)(0x300000);
-	u8 *readBootBinPtr = (u8 *)(0x100000);
-
+//	u8 *writeBootBinPtr = (u8 *)(0x300000);
+//	u8 *readBootBinPtr = (u8 *)(0x100000);
+//
 //	for(int eraseBlockNum = 0; eraseBlockNum < 200; eraseBlockNum++)
 //	{
 //		XNandPs_EraseBlock(InstancePtr, eraseBlockNum);
